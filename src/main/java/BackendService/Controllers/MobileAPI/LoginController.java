@@ -1,4 +1,4 @@
-package BackendService.Controllers;
+package BackendService.Controllers.MobileAPI;
 
 import BackendService.Controllers.ObjectsJSON.ClassesRequestJSON.CredentialsJSON;
 import BackendService.Controllers.ObjectsJSON.ClassesResponseJSON.UserSessionToken;
@@ -15,7 +15,7 @@ import java.util.Random;
 @Controller
 public class LoginController {
 
-    @RequestMapping("/login")
+    @RequestMapping("/login/mobile")
     public ResponseEntity<UserSessionToken> Authorization(@RequestBody CredentialsJSON credentials) {
         // TODO: Delete this
         System.out.println(credentials.getLogin() + ":" + credentials.getPassword_hash());

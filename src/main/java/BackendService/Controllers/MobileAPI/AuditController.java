@@ -1,4 +1,4 @@
-package BackendService.Controllers;
+package BackendService.Controllers.MobileAPI;
 
 import BackendService.Controllers.ObjectsJSON.ClassesRequestJSON.AuditJSON;
 import org.springframework.http.HttpStatus;

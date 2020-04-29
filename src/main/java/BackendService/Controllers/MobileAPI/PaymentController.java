@@ -1,4 +1,4 @@
-package BackendService.Controllers;
+package BackendService.Controllers.MobileAPI;
 
 import BackendService.Controllers.ObjectsJSON.ClassesRequestJSON.PaymentJSON;
 import BackendService.Controllers.ObjectsJSON.ClassesResponseJSON.PaymentResponse;
