@@ -19,12 +19,10 @@ public class PaymentController {
         System.out.println("exp_date: " + payment.getExp_date());
         System.out.println("ch_name: " + payment.getCh_name());
         System.out.println("amount: " + payment.getAmount());
-        System.out.println("currency: " + payment.getCurrency());
 
         PaymentResponse paymentResponse = new PaymentResponse();
         // TODO: check payment fields
-        if (payment.getCurrency() == null ||
-        payment.getAmount() == null ||
+        if (payment.getAmount() == null ||
         payment.getCh_name() == null ||
         payment.getExp_date() == null ||
         payment.getPan() == null ||

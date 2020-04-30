@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a163e575-54a2-486f-b05c-cb26d952a7ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/AuditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/AuditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BackendService/Controllers/AuditController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BackendService/Controllers/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BackendService/Controllers/PaymentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/KeyManagementMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/KeyManagementMobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/ObjectsJSON/ClassesRequestJSON/PaymentJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/ObjectsJSON/ClassesRequestJSON/PaymentJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/ObjectsJSON/ClassesResponseJSON/UserSessionToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/ObjectsJSON/ClassesResponseJSON/UserSessionToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/StatusList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/CommonParameters/StatusList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
       <module name="Backend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BackendService.*" />
+          <option name="PATTERN" value="BackendService.CommonParameters.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,10 +106,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1583762621883" />
-    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser" timestamp="1588184587456">
+    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser" timestamp="1588189748289">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1588184587456" />
+    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1588189748289" />
     <state x="375" y="31" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1587853948135">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

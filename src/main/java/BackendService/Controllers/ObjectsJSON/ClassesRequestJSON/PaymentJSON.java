@@ -1,12 +1,12 @@
 package BackendService.Controllers.ObjectsJSON.ClassesRequestJSON;
 
+// TODO: maybe add more fields (currency, etc)
 public class PaymentJSON {
     String session_token;
     String pan;
     String exp_date;
     String ch_name;
     String amount;
-    String currency;
 
     public String getAmount() {
         return amount;
@@ -14,14 +14,6 @@ public class PaymentJSON {
 
     public void setAmount(String amount) {
         this.amount = amount;
-    }
-
-    public String getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
     }
 
     public String getSession_token() {

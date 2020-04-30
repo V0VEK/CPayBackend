@@ -1,19 +1,20 @@
 package BackendService.Controllers.MobileAPI;
 
+import BackendService.CommonParameters.CommonServices;
 import BackendService.Controllers.ObjectsJSON.ClassesRequestJSON.CredentialsJSON;
 import BackendService.Controllers.ObjectsJSON.ClassesResponseJSON.UserSessionToken;
-import jdk.internal.jline.internal.Log;
+import BackendService.CommonParameters.StatusList;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.http.ResponseEntity;
 
-// TODO: Find secure random generator
-import java.util.Random;
 
 @Controller
 public class LoginController {
+    StatusList status;
+    CommonServices services;
 
     @RequestMapping("/login/mobile")
     public ResponseEntity<UserSessionToken> Authorization(@RequestBody CredentialsJSON credentials) {
@@ -27,31 +28,17 @@ public class LoginController {
         }
         else {
             // TODO: Check password and login in database
-            token.setSession_token(GenerateUserToken());
+            token.setSession_token(services.GenerateUserToken());
             token.setRole_id("some_role");
+            token.setStatus(status.STATUS_OK);
 
-            // TODO: Delete this
-            System.out.println("Generated token: " + token.getSession_token());
+            // TODO: Write log in database
+            System.out.println("Generated token: " + token.getSession_token() + " for user " + credentials.getLogin() + " with role " + token.getRole_id());
         }
 
+        // TODO: log authorization attempt
+
         return new ResponseEntity<>(token, HttpStatus.OK);
-    }
-
-    private String GenerateUserToken() {
-        Random rd = new Random();
-        byte[] randomBytes = new byte[32];
-        // TODO: Use secure random generator
-        rd.nextBytes(randomBytes);
-
-        return FromBytesToHexString(randomBytes);
-    }
-
-    private static String FromBytesToHexString(byte[] bytesArray) {
-        String buff = "";
-        for (byte b : bytesArray)
-            buff += String.format("%02X", b);
-
-        return buff;
     }
 
 }
