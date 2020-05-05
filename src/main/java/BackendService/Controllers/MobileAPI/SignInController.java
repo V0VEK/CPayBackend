@@ -1,19 +1,21 @@
 package BackendService.Controllers.MobileAPI;
 
-import BackendService.CommonParameters.CommonServices;
 import BackendService.CommonParameters.StatusList;
 import BackendService.Controllers.ObjectsJSON.ClassesRequestJSON.CreateUserJSON;
-import BackendService.Controllers.ObjectsJSON.ClassesRequestJSON.CredentialsJSON;
 import BackendService.Controllers.ObjectsJSON.ClassesResponseJSON.StatusResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class SignInController {
     StatusList status;
+
+    public SignInController() {
+        status = new StatusList();
+    }
 
     // Create user
     @RequestMapping("create_user/mobile")
