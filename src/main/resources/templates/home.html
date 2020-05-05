@@ -6,16 +6,16 @@
 </head>
 <body>
 
-    <div><label for="original_login">Login:</label></div>
-    <div><input type="text" id="original_login"></div>
-    <div><label for="password">Password:</label></div>
-    <div><input type="password" id="password"></div>
-    <div><input type="button" value="LOG IN" onclick="CalculatePasswordHash();"></div>
+<div><label for="original_login">Login:</label></div>
+<div><input type="text" id="original_login"></div>
+<div><label for="password">Password:</label></div>
+<div><input type="password" id="password"></div>
+<div><input type="button" value="LOG IN" onclick="CalculatePasswordHash();"></div>
 
-    <form action="/login/browser" method="post" id="hiddenForm">
-        <input type="hidden" id="login" name="login">
-        <input type="hidden" id="password_hash" name="password_hash">
-    </form>
+<form action="/login/browser" method="post" id="hiddenForm">
+    <input type="hidden" id="login" name="login">
+    <input type="hidden" id="password_hash" name="password_hash">
+</form>
 
 <script>
     var sha256 = function sha256(ascii) {

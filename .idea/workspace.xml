@@ -2,27 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a163e575-54a2-486f-b05c-cb26d952a7ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/BrowserGUI/KeyManagementController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/keyCreation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/keyManagement.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/keyManagementLogin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/management.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/BrowserGUI/UserCreationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BackendService/Database/Repositories/UserInfoDBRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BackendService/Database/Repositories/UserRoleDBRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BackendService/Database/Tables/UserInfoDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BackendService/Database/Tables/UserRoleDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BackendService/Services/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userCreation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/CommonParameters/CommonServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/CommonParameters/CommonServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/CommonParameters/StatusList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/CommonParameters/StatusList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/BrowserGUI/BrowserLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/BrowserGUI/BrowserLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/AuditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/AuditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/KeyManagementMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/KeyManagementMobile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/MobAppLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/SignInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/SignInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/MobAppLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/Controllers/MobileAPI/MobAppLoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BackendService/SpringBootApplicationMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BackendService/SpringBootApplicationMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/keyManagementLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/keyManagementLogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/management.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/management.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BackendService/Controllers/BrowserGUI/BrowserLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BackendService/Controllers/BrowserGUI/BrowserLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BackendService/Controllers/MobileAPI/AuditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BackendService/Controllers/MobileAPI/AuditController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BackendService/Controllers/MobileAPI/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BackendService/Controllers/MobileAPI/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BackendService/Controllers/MobileAPI/PaymentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BackendService/Controllers/ObjectsJSON/ClassesRequestJSON/PaymentJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BackendService/Controllers/ObjectsJSON/ClassesRequestJSON/PaymentJSON.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BackendService/Controllers/ObjectsJSON/ClassesResponseJSON/UserSessionToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BackendService/Controllers/ObjectsJSON/ClassesResponseJSON/UserSessionToken.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BackendService/SpringBootApplicationMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BackendService/SpringBootApplicationMain.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
         <option value="HTML File" />
       </list>
     </option>
@@ -57,7 +58,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -65,6 +66,9 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Study\5th_course\2nd_sem\Diplom\CPayBakend\src\main\resources\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Study\5th_course\2nd_sem\Diplom\CPayBakend\src\main\resources\static" />
       <recent name="C:\Study\5th_course\2nd_sem\Diplom\CPayBakend\src\main\resources\templates" />
@@ -130,10 +134,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1583762621883" />
-    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser" timestamp="1588681429593">
+    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser" timestamp="1588704716459">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1588681429593" />
+    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1588704716459" />
     <state x="375" y="31" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1587853948135">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -146,26 +150,30 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="441" y="207" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1583762239810" />
+    <state x="284" y="0" key="CommitChangelistDialog2" timestamp="1588717978206">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="284" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1588717978206" />
     <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1588253936092">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1588253936092" />
-    <state width="1237" height="136" key="GridCell.Tab.0.bottom" timestamp="1588686690178">
+    <state width="1237" height="222" key="GridCell.Tab.0.bottom" timestamp="1588719936513">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="136" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588686690178" />
-    <state width="1237" height="136" key="GridCell.Tab.0.center" timestamp="1588686690178">
+    <state width="1237" height="222" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588719936513" />
+    <state width="1237" height="222" key="GridCell.Tab.0.center" timestamp="1588719936513">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="136" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588686690178" />
-    <state width="1237" height="136" key="GridCell.Tab.0.left" timestamp="1588686690178">
+    <state width="1237" height="222" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588719936513" />
+    <state width="1237" height="222" key="GridCell.Tab.0.left" timestamp="1588719936513">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="136" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588686690178" />
-    <state width="1237" height="136" key="GridCell.Tab.0.right" timestamp="1588686690178">
+    <state width="1237" height="222" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588719936513" />
+    <state width="1237" height="222" key="GridCell.Tab.0.right" timestamp="1588719936513">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="136" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588686690178" />
+    <state width="1237" height="222" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588719936513" />
     <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1587928627352">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

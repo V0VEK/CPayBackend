@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Key management login</title>
-    <script src="/jquery.min.js"></script>
 </head>
 <body>
-    <label for="firstPassword">First Password:</label>
-    <input type="password" name="firstPassword" id="firstPassword"><br><br>
-    <label for="secondPassword">Second Password:</label>
-    <input type="password" name="secondPassword" id="secondPassword"><br><br>
-    <input type="button" id="submit" onclick="CalculatePasswordsHashes();" value="LOG IN"/>
+    <div><label for="firstPassword">First Password:</label></div>
+    <div><input type="password" name="firstPassword" id="firstPassword"></div>
+    <div><label for="secondPassword">Second Password:</label></div>
+    <div><input type="password" name="secondPassword" id="secondPassword"></div>
+    <div><input type="button" id="submit" onclick="CalculatePasswordsHashes();" value="LOG IN"/></div>
 
     <form action="/login/browser/key_management" method="post" id="hiddenForm">
         <input type="hidden" id="passwordHash1" name="passwordHash1"/>

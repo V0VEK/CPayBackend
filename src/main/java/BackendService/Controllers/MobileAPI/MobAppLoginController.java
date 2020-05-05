@@ -13,12 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MobAppLoginController {
-    StatusList status;
-    CommonServices services;
+    private CommonServices services;
 
-    public MobAppLoginController() {
-        this.status = new StatusList();
-        this.services = new CommonServices();
+    public MobAppLoginController(CommonServices srv) {
+        this.services = srv;
     }
 
     @RequestMapping("/login/mobile")
@@ -35,7 +33,7 @@ public class MobAppLoginController {
             // TODO: Check password and login in database
             token.setSession_token(services.GenerateUserToken());
             token.setRole_id("some_role");
-            token.setStatus(status.STATUS_OK);
+            token.setStatus(StatusList.STATUS_OK);
 
             // TODO: Write log in database
             System.out.println("Generated token: " + token.getSession_token() + " for user " + credentials.getLogin() + " with role " + token.getRole_id());

@@ -1,8 +1,12 @@
 package BackendService.CommonParameters;
 
 // TODO: Find secure random generator
+import org.springframework.stereotype.Component;
+
 import java.util.Random;
 
+
+@Component
 public class CommonServices {
 
     public String GenerateUserToken() {

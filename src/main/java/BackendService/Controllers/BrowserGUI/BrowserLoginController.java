@@ -1,15 +1,29 @@
 package BackendService.Controllers.BrowserGUI;
 
+import BackendService.Services.LoginService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class BrowserLoginController {
 
+    LoginService loginService;
+
+    public BrowserLoginController(LoginService ls) {
+        this.loginService = ls;
+    }
+
     @RequestMapping (method = RequestMethod.POST, value = "/login/browser")
-    public String BrowserLogin (@RequestParam(name="login") String login, @RequestParam(name="password") String password) {
-        System.out.println("Check " + login + " " + password);
+    public String BrowserLogin (@RequestParam(name="login") String login, @RequestParam(name="password_hash") String passwordHash) {
+        System.out.println("Check " + login + " " + passwordHash);
+        String roleName = loginService.GetUserRoleByLoginAndPassHash(login, passwordHash);
+
+        if (roleName.equals("NULL")) {
+            return "home";
+        }
         // TODO: Need to implement cookie
+
+        System.out.println("Right password. Granted role: " + roleName);
         return "management";
     }
 
