@@ -1,6 +1,6 @@
 package BackendService.Controllers.MobileAPI;
 
-import BackendService.CommonParameters.StatusList;
+import BackendService.CommonParameters.CommonParameters;
 import BackendService.Controllers.ObjectsJSON.ClassesRequestJSON.CreateUserJSON;
 import BackendService.Controllers.ObjectsJSON.ClassesResponseJSON.StatusResponse;
 import org.springframework.http.HttpStatus;
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class SignInController {
-    StatusList status;
+    CommonParameters status;
 
     public SignInController() {
-        status = new StatusList();
+        status = new CommonParameters();
     }
 
     // Create user

@@ -3,7 +3,7 @@ package BackendService.Controllers.MobileAPI;
 import BackendService.CommonParameters.CommonServices;
 import BackendService.Controllers.ObjectsJSON.ClassesRequestJSON.CredentialsJSON;
 import BackendService.Controllers.ObjectsJSON.ClassesResponseJSON.UserSessionToken;
-import BackendService.CommonParameters.StatusList;
+import BackendService.CommonParameters.CommonParameters;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,9 +31,9 @@ public class MobAppLoginController {
         }
         else {
             // TODO: Check password and login in database
-            token.setSession_token(services.GenerateUserToken());
+            token.setSession_token(services.GenerateRandomBytesInString(CommonParameters.SESSION_TOKEN_LENGTH));
             token.setRole_id("some_role");
-            token.setStatus(StatusList.STATUS_OK);
+            token.setStatus(CommonParameters.STATUS_OK);
 
             // TODO: Write log in database
             System.out.println("Generated token: " + token.getSession_token() + " for user " + credentials.getLogin() + " with role " + token.getRole_id());

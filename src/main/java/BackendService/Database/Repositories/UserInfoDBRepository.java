@@ -10,5 +10,5 @@ public interface UserInfoDBRepository extends CrudRepository<UserInfoDB, Integer
 
     public List<UserInfoDB> findByUserLoginAndPasswordHash(String login, String passwordHash);
 
-
+    public List<UserInfoDB> findByPasswordHashAndRoleId(String passwordHash, Integer roleId);
 }

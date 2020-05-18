@@ -4,7 +4,7 @@ import BackendService.Controllers.ObjectsJSON.ClassesRequestJSON.KeyInitJSON;
 import BackendService.Controllers.ObjectsJSON.ClassesRequestJSON.KeysKCVListJSON;
 import BackendService.Controllers.ObjectsJSON.ClassesResponseJSON.ChangeWorkKeysResponse;
 import BackendService.Controllers.ObjectsJSON.ClassesResponseJSON.StatusResponse;
-import BackendService.CommonParameters.StatusList;
+import BackendService.CommonParameters.CommonParameters;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class KeyManagementMobile {
-    StatusList status;
+    CommonParameters status;
 
     public KeyManagementMobile() {
-        status = new StatusList();
+        status = new CommonParameters();
     }
 
     @RequestMapping("/key_init/mobile")

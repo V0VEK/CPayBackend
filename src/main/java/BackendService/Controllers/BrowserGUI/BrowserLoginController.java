@@ -1,5 +1,6 @@
 package BackendService.Controllers.BrowserGUI;
 
+import BackendService.Services.KeyManagementServices;
 import BackendService.Services.LoginService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -8,9 +9,11 @@ import org.springframework.web.bind.annotation.*;
 public class BrowserLoginController {
 
     LoginService loginService;
+    KeyManagementServices keyManagementService;
 
-    public BrowserLoginController(LoginService ls) {
-        this.loginService = ls;
+    public BrowserLoginController(LoginService loginService, KeyManagementServices keyManagementService) {
+        this.loginService = loginService;
+        this.keyManagementService = keyManagementService;
     }
 
     @RequestMapping (method = RequestMethod.POST, value = "/login/browser")
@@ -27,12 +30,23 @@ public class BrowserLoginController {
         return "management";
     }
 
+
+    // TODO: Maybe need to segregate key management and user management
     @RequestMapping (method = RequestMethod.POST, value = "/login/browser/key_management")
     public String KeyManagementBrowserLogin (@RequestParam(name="passwordHash1") String passHash1, @RequestParam(name="passwordHash2") String passHash2) {
         System.out.println("hash1: " + passHash1 + " hash2: " + passHash2);
 
+        if (loginService.IsValidKeyManagerCredentials(passHash1, passHash2)){
+            return "keyManagement";
+        }
+
         // TODO: Check password in database
         // TODO: Create session
-        return "keyManagement";
+        return "keyManagementLogin";
+    }
+
+    @RequestMapping ("/check")
+    public void Check() {
+        keyManagementService.GenerateKeyTMK();
     }
 }
